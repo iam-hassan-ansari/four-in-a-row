@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Four in a Row — Online (Demo)</title>
+<title>Four in a Row - Online (Demo)</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <div class="topbar">
-    <div class="brand">🔴🟡 Four in a Row <span class="badge">DEMO</span></div>
+    <div class="brand">Four in a Row <span class="badge">DEMO</span></div>
   </div>
 
   <div class="container narrow">
 
     <!-- LOBBY -->
     <div id="lobby" class="card">
-      <h3>Play Online — no account, no app server</h3>
+      <h3>Play Online - no account, no app server</h3>
       <p class="muted">Connects directly to your friend's browser using a room code (WebRTC peer-to-peer). Both players just need this page open.</p>
 
       <div class="lobby-split">
@@ -25,9 +25,9 @@
           <button id="btn-host">Create Room</button>
           <div id="host-code-box" style="display:none;">
             <p class="muted">Share this code with your friend:</p>
-            <div class="room-code" id="room-code">——</div>
+            <div class="room-code" id="room-code">--</div>
             <button class="secondary" id="btn-copy-code">Copy Code</button>
-            <p class="muted" id="host-status">Waiting for opponent to join…</p>
+            <p class="muted" id="host-status">Waiting for opponent to join...</p>
           </div>
         </div>
         <div class="lobby-col">
@@ -43,7 +43,7 @@
     <div id="game-screen" class="card" style="display:none;">
       <div class="game-header">
         <div>You are: <span id="my-color" class="chip"></span></div>
-        <div id="turn-indicator">—</div>
+        <div id="turn-indicator"> - </div>
       </div>
       <div id="board" class="fr-board"></div>
       <div id="game-status" class="muted"></div>
@@ -55,7 +55,7 @@
   </div>
 
   <div class="app-footer">
-    Demo project by <strong>Hassan Ansari</strong> ·
+    Demo project by <strong>Hassan Ansari</strong> -
     <a href="https://github.com/iam-hassan-ansari" target="_blank" rel="noopener">GitHub</a>
   </div>
 

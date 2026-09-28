@@ -1,5 +1,5 @@
 /* =========================================================
-   Four in a Row — pure game logic (no DOM, no network).
+   Four in a Row - pure game logic (no DOM, no network).
    Kept separate so it can be unit-tested directly with Node,
    and reused as-is in the browser.
    ========================================================= */

@@ -1,7 +1,7 @@
 /* =========================================================
-   Four in a Row — Online (Demo)
+   Four in a Row - Online (Demo)
    Peer-to-peer over WebRTC via PeerJS (no game server of our
-   own — PeerJS's public broker server is only used to help two
+   own - PeerJS's public broker server is only used to help two
    browsers find each other; all game data flows directly
    between the two players). Board logic lives in game-logic.js.
    ========================================================= */
@@ -50,7 +50,7 @@ document.getElementById("btn-join").addEventListener("click", () => {
   const code = document.getElementById("join-code").value.trim();
   if (!code) return;
   document.getElementById("btn-join").disabled = true;
-  document.getElementById("join-status").textContent = "Connecting…";
+  document.getElementById("join-status").textContent = "Connecting...";
 
   peer = new Peer();
   peer.on("open", () => {
@@ -75,7 +75,7 @@ document.getElementById("btn-join").addEventListener("click", () => {
 function setupConnection() {
   conn.on("data", handleMessage);
   conn.on("close", () => {
-    document.getElementById("game-status").textContent = "⚠️ Opponent disconnected.";
+    document.getElementById("game-status").textContent = "Opponent disconnected.";
   });
   startGame();
 }
@@ -151,14 +151,14 @@ function afterMove(row, col, player) {
     gameOver = true;
     document.getElementById("turn-indicator").textContent = "Game over";
     document.getElementById("game-status").textContent =
-      player === myPlayer ? "🎉 You win!" : "😔 Opponent wins.";
+      player === myPlayer ? "You win!" : "Opponent wins.";
     document.getElementById("post-game").style.display = "block";
     return;
   }
   if (isBoardFull(board)) {
     gameOver = true;
     document.getElementById("turn-indicator").textContent = "Game over";
-    document.getElementById("game-status").textContent = "🤝 It's a draw.";
+    document.getElementById("game-status").textContent = "It's a draw.";
     document.getElementById("post-game").style.display = "block";
     return;
   }

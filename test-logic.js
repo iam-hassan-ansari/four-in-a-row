@@ -1,6 +1,6 @@
 /* Simple unit tests for the pure game logic in game-logic.js.
    Run with: node test-logic.js
-   (Not needed to play the game — this is just to demonstrate/verify
+   (Not needed to play the game - this is just to demonstrate/verify
    the win-detection logic works correctly in every direction.) */
 
 const { createBoard, dropPiece, isBoardFull, checkWin, ROWS, COLS } = require('./game-logic.js');
